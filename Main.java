@@ -8,9 +8,19 @@ import com.company.tree.BST;
 public class Main {
 
     public static void main(String[] args) {
+        System.out.println("First task");
+        Data data = new Data(10, "Uxtomskogo", 2354);
+        System.out.println(data.toString());
+        Data data1 = new Data(1, "Uxtomskogo", 2354);
+        System.out.println(data1.toString());
+        Data data2 = new Data(10, "Uxtomskogo", 354);
+        System.out.println(data2.toString());
+
+
+        System.out.println("\nSecond task");
         int[] size = {1_000, 10_000, 20_000, 25_000};
         for (int i: size) {
-            System.out.println("\nSize: " + i);
+            System.out.println("Size: " + i);
             DataProcessor dp = new DataProcessor(new BST(), new CustomHashTable(), i);
 
             System.out.println("Tree Inserting: " + dp.insertTree());
@@ -22,13 +32,5 @@ public class Main {
 
 
         }
-
-        Data data = new Data(10, "Uxtomskogo", 2354);
-        System.out.println(data.hashCode());
-        Data data1 = new Data(1, "Uxtomskogo", 2354);
-        System.out.println(data1.hashCode());
-        Data data2 = new Data(10, "Uxtomskogo", 354);
-        System.out.println(data2.hashCode());
-
     }
 }
