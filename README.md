@@ -11,6 +11,7 @@ Tree Searching: 76 000
 Map Inserting: 382 000
 Map Searching: 83 500
 
+
 Size: 10000
 Tree Inserting: 250 564 000
 Tree Searching: 44 000
