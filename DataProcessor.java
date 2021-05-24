@@ -5,6 +5,7 @@ import com.company.tree.AVL;
 import com.company.tree.BST;
 
 import java.util.Locale;
+import java.util.Random;
 
 
 public class DataProcessor {
@@ -26,6 +27,14 @@ public class DataProcessor {
         return String.format(Locale.CANADA_FRENCH, "%,d", (System.nanoTime()-start));
     }
 
+    public String insertRandomTimer(){
+        Random random = new Random();
+        long start = System.nanoTime();
+        for (int i = 0; i <=size; i++) {
+            tree.insert(random.nextInt());
+        }
+        return String.format(Locale.CANADA_FRENCH, "%,d", (System.nanoTime()-start));
+    }
 
     public String searchTree(){
         long start = System.nanoTime();

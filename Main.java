@@ -18,12 +18,12 @@ public class Main {
 
 
         System.out.println("\nSecond task");
-        int[] size = {1_000, 10_000, 20_000, 25_000};
+        int[] size = {1_000, 10_000, 100_000, 200_000};
         for (int i: size) {
             System.out.println("Size: " + i);
             DataProcessor dp = new DataProcessor(new BST(), new CustomHashTable(), i);
 
-            System.out.println("Tree Inserting: " + dp.insertTree());
+            System.out.println("Tree Inserting: " + dp.insertRandomTimer());
             System.out.println("Tree Searching: " + dp.searchTree());
 
             System.out.println("Map Inserting: " + dp.insertMap());
